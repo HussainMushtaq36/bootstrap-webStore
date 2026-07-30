@@ -108,6 +108,7 @@
         </div>
     </header>
     <main>
+        <!-- this is the carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -139,31 +140,42 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="container-fluid d-flex justify-content-around">
-            <div class="card" style="width: 18rem;">
-                <img src="hero-food.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Pizza</p>
+        <!-- this is below the carousel -->
+        <div class="container-fluid pt-4 d-flex flex-column flex-md-row justify-content-center align-items-center "
+            style="background-color: #2f2f2f;">
+            <div class="d-flex">
+                <div class="card col-6 col-md-12 border-0 align-items-center d-flex justify-content-center"
+                    style="width: 18rem ;background-color: #2f2f2f;">
+                    <img src="pizza.png" class="card-img-top " alt="..." style="width: 4rem;">
+                    <div class="card-body">
+                        <p class="card-text text-white fs-5">Pizza</p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-12 border-0 align-items-center d-flex justify-content-center"
+                    style="width: 18rem;background-color: #2f2f2f;">
+                    <img src="tacos.png" class="card-img-top" style="width: 4rem;" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-white fs-5">Tacos</p>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="hero-food.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Pizza</p>
+            <div class="d-flex">
+                <div class="card col-6 col-md-12 border-0 d-flex align-items-center justify-content-center"
+                    style="width: 18rem;background-color: #2f2f2f;">
+                    <img src="burger.png" style="width: 4rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-white fs-5">Burgger</p>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-12 border-0 d-flex flex-column align-items-center justify-content-center"
+                    style="width: 18rem;background-color: #2f2f2f;">
+                    <img src="salad.png" style="width: 4rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-white fs-5">salad</p>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="hero-food.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Pizza</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="hero-food.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Pizza</p>
-                </div>
-            </div>
+
         </div>
     </main>
     <footer>
@@ -284,19 +296,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="lowerfooter  d-flex justify-content-between align-items-center">
-                    <div>
+                <div class="lowerfooter flex-column flex-md-row  d-flex justify-content-between align-items-center">
+                    <div  class="ps-md-1">
                         <img class="" src="food-logo.png" alt="">
                     </div>
                     <div>
-                        <div class="d-flex flex-column justify-content-between text-light fs-2">
-                            <span>
+                        <div class="d-flex flex-column justify-content-end justify-content-md-between text-light fs-2">
+                            <span  class="ps-5 ps-md-0">
                                 Powered By
                             </span>
                             <span>
                                 OpenCart Your Store
                             </span>
-                            <span>
+                            <span class="ps-5 ps-md-0">
                                 © 2024
                             </span>
                         </div>
