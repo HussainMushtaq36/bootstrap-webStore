@@ -9,94 +9,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .fonts {
-            font-size: 36px;
-        }
-
-        .stars {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .stars:hover {
-            opacity: 1;
-        }
-
-        @media (max-width:450px) {
-            .fonts {
-                font-size: 10px;
-            }
-        }
-
-        #twofood1,
-        #twofood2 {
-
-            transition: transform 0.3s ease-in-out
-        }
-
-        .grow {
-
-            transition: transform 0.3s ease-in-out
-        }
-
-        .grow:hover {
-            transform: scale(1.05)
-        }
-
-        #twofood1:hover,
-        #twofood2:hover {
-            transform: scale(1.05)
-        }
-    </style>
+    
 </head>
 
 <body>
     <header>
-        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
-            <div class="firsttopbar py-1 px-2 bg-light ">
+        <div class="container-fluid " style="padding-left: 0px;padding-right: 0px;">
+            <div class="firsttopbar py-1 px-2  " style="background-color: #eeeeee;">
                 <div class="container py-2 d-flex flex-column flex-md-row justify-content-around align-items-center ">
-                    <div class="d1">
-                        <i class="bi bi-telephone mx-2"></i>
+                    <div class="d1 " style="color: #212529;font-weight: 500; font-size: 15px;">
+                        <i class="bi bi-clock " style="color: #212529;font-weight: 500;"></i>
                         <span>Opening Hours:8:00 AM - 8:00 PM</span>
                     </div>
                     <div class="d2">
-                        <i class="bi bi-person mx-2"></i>
-                        My Account <i class="bi bi-cash mx-2"></i>
-                        Currency <i class="fi fi-gb mx-2"></i>
-                        English
-
+                        <i class="bi bi-person "></i>
+                        My Account <i class="bi bi-chevron-down fw-bold" style="font-size: 10px;"></i><i
+                            class="bi bi-currency-dollar "></i>Currency <i class="bi bi-chevron-down fw-bold"
+                            style="font-size: 10px;"></i><span> <img src="en-flag.png" alt=""></span> English <i
+                            class="bi bi-chevron-down fw-bold" style="font-size: 10px;"></i>
                     </div>
                 </div>
             </div>
             <!--this is the 2nd topbar -->
-            <div style="min-height:100px;"
-                class="container px-3   d-flex flex-column flex-md-row  justify-content-around align-items-center">
-                <div class="2ndtopbar-start  text-start ">
+            <div style="min-height:80px; padding: 0px 30px;"
+                class="container px-md-5 px-2  d-flex flex-md-row  justify-content-md-around justify-content-between align-items-center">
+                <div class="2ndtopbar-start  text-start paddsl ">
                     <div class="topbar d-flex align-items-center">
-                        <i class="bi bi-telephone  me-3 text-white bg-danger rounded-circle fs-3 "
-                            style="padding: 6px 12px;"></i>
+                        <i class="bi bi-telephone  me-2 text-white bg-danger rounded-circle fs-3 "
+                            style="padding: 6px 13px;"></i>
                         <div class="">
                             <h6>Contact us:</h6><span>03220583238</span>
                         </div>
                     </div>
                 </div>
                 <div class="2ndtobbar-mid">
-                    <img src="food-logo.png" class="img-fluid" style="width:100%;">
+                    <img src="food-logo.png" class="img-fluid d-none d-md-block" style="width:100%;">
                 </div>
-                <div class="2ndtopbar-end  text-start ">
+                <div class="2ndtopbar-end  text-start paddsr ">
                     <div class="topbar d-flex align-items-center">
-                        <i class="bi bi-bucket me-3 text-white bg-danger rounded-circle fs-3 "
+                        <i class="bi bi-bucket me-1 text-white bg-danger rounded-circle fs-3 "
                             style="padding: 6px 12px;"></i>
                         <div class="">
-                            <h6>My Cart:</h6><span>03220583238</span>
+                            <h6>My Cart</h6><span>0item-$0.00</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- time for the navbar -->
-            <div class="nav fw-bolder" style="background-color: rgb(46, 250, 46);">
-                <div class="container fs-5  ">
+            <div class="nav " style="background-color:#79b530;">
+                <div class="container fs-5 fw-semibold ">
                     <nav class="navbar navbar-expand-lg ">
                         <div class="container-fluid px-3 py-2">
                             <a class="navbar-brand text-white" href="index.html">Home</a>
@@ -109,8 +70,8 @@
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
+                                            data-bs-toggle="dropdown" aria-expanded="false vanish">
+                                            MENU
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="medicine.html">Medicine</a></li>
@@ -138,12 +99,12 @@
 
                                 </ul>
                                 <form class="d-flex position-relative" role="search">
-                                    <input class="form-control   " type="search" placeholder="Search"
-                                        aria-label="Search"
-                                        style="padding-right: 190px;padding-top:.7rem;padding-bottom:.7rem;">
-                                    <button class="btn  text-white " style="position:absolute; top:10%;left:85%;"
+                                    <input class="form-control navsearch  position-relative " type="search" placeholder="Search"
+                                        aria-label="Search">
+                                        
+                                    <button class="btn  text-white searchicon " 
                                         type="submit ">
-                                        <i class="bi bi-search text-white p-2 bg-danger rounded-1">
+                                        <i class="bi bi-search text-white p-md-2 p-1 bg-danger rounded-1">
                                         </i>
                                     </button>
                                 </form>
@@ -235,6 +196,17 @@
 
                     </div>
                 </div>
+                <div class="col col-6 col-md-2 d-md-none d-block">
+
+                    <div class="card border border-danger  col-md-12 border-0 d-flex flex-column align-items-center justify-content-center"
+                        style="background-color: #2f2f2f;">
+                        <img src="drink.png" style="width: 4rem;" class="img-fluid card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white fs-5">Drink</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -243,104 +215,104 @@
             <div class="container">
                 <div class="row p-3">
                     <!-- card1 -->
-                    <div class="col py-1 col-md-3">
-                        <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                    <div class="col-6 py-1 col-md-3">
+                        <div class="card rounded-0 border-0 position-relative ">
                             <img src="pizzi.jpg" class="card-img-top" alt="...">
                             <div class="d-flex justify-content-center ">
                                 <img src="stars.png" class="w-50 stars" alt="">
                             </div>
                             <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
-                            <p class="bg-danger text-white p-2 rounded-3 position-absolute  " style="top:3%;left:3%;">
+                                style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                            <p class="bg-danger text-white p-md-2 rounded-3 position-absolute  "
+                                style="top:3%;left:3%;">
                                 SELL</p>
                         </div>
-                        <div class="card shadow mt-2  " style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                        <div class="card mt-2 rounded-0 border-0" style=" box-sizing: border-box;">
                             <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                <p class="card-text fs-5 px-2">
+                                <p class="card-text fontc  px-2">
                                     Chargrilled Burg
                                 </p>
-                                <div class="text-white bg-succes px-1 h-25 px-2"
-                                    style="background-color: rgb(52, 247, 52);height: 20%;">
+                                <div class="text-white bg-succes  padg" style="background-color: #79b530;height: 20%;">
                                     <p class="p-0 m-0"> $1,800.0</p>
-                                    <p class="p-0 m-0"> $2,000.0</p>
+                                    <p class="p-0 m-0 text-decoration-line-through"> $2,000.0</p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <!-- card2 -->
-                    <div class="col py-1 col-md-3">
-                        <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                    <div class="col-6 py-1 col-md-3">
+                        <div class="card rounded-0 border-0 position-relative ">
                             <img src="pizzi.jpg" class="card-img-top" alt="...">
                             <div class="d-flex justify-content-center ">
                                 <img src="stars.png" class="w-50 stars" alt="">
                             </div>
                             <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
-                            <p class="bg-danger text-white p-2 rounded-3 position-absolute  " style="top:3%;left:3%;">
+                                style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                            <p class="bg-danger text-white p-md-2 rounded-3 position-absolute  "
+                                style="top:3%;left:3%;">
                                 SELL</p>
                         </div>
-                        <div class="card shadow mt-2  " style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                        <div class="card mt-2 rounded-0 border-0" style=" box-sizing: border-box;">
                             <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                <p class="card-text fs-5 px-2">
+                                <p class="card-text fontc  px-2">
                                     Chargrilled Burg
                                 </p>
-                                <div class="text-white bg-succes px-1 h-25 px-2"
-                                    style="background-color: rgb(52, 247, 52);height: 20%;">
+                                <div class="text-white bg-succes  padg" style="background-color: #79b530;height: 20%;">
                                     <p class="p-0 m-0"> $1,800.0</p>
-                                    <p class="p-0 m-0"> $2,000.0</p>
+                                    <p class="p-0 m-0 text-decoration-line-through"> $2,000.0</p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <!-- card3 -->
-                    <div class="col py-1 col-md-3">
-                        <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                    <div class="col-6 py-1 col-md-3">
+                        <div class="card rounded-0 border-0 position-relative ">
                             <img src="pizzi.jpg" class="card-img-top" alt="...">
                             <div class="d-flex justify-content-center ">
                                 <img src="stars.png" class="w-50 stars" alt="">
                             </div>
                             <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
-                            <p class="bg-danger text-white p-2 rounded-3 position-absolute  " style="top:3%;left:3%;">
+                                style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                            <p class="bg-danger text-white p-md-2 rounded-3 position-absolute  "
+                                style="top:3%;left:3%;">
                                 SELL</p>
                         </div>
-                        <div class="card shadow mt-2  " style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                        <div class="card mt-2 rounded-0 border-0" style=" box-sizing: border-box;">
                             <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                <p class="card-text fs-5 px-2">
+                                <p class="card-text fontc  px-2">
                                     Chargrilled Burg
                                 </p>
-                                <div class="text-white bg-succes px-1 h-25 px-2"
-                                    style="background-color: rgb(52, 247, 52);height: 20%;">
+                                <div class="text-white bg-succes  padg" style="background-color: #79b530;height: 20%;">
                                     <p class="p-0 m-0"> $1,800.0</p>
-                                    <p class="p-0 m-0"> $2,000.0</p>
+                                    <p class="p-0 m-0 text-decoration-line-through"> $2,000.0</p>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <!-- card4 -->
-                    <div class="col py-1 col-md-3">
-                        <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                    <div class="col-6 py-1 col-md-3">
+                        <div class="card rounded-0 border-0 position-relative ">
                             <img src="pizzi.jpg" class="card-img-top" alt="...">
                             <div class="d-flex justify-content-center ">
                                 <img src="stars.png" class="w-50 stars" alt="">
                             </div>
                             <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
-                            <p class="bg-danger text-white p-2 rounded-3 position-absolute  " style="top:3%;left:3%;">
+                                style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                            <p class="bg-danger text-white p-md-2 rounded-3 position-absolute  "
+                                style="top:3%;left:3%;">
                                 SELL</p>
                         </div>
-                        <div class="card shadow mt-2  " style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                        <div class="card mt-2 rounded-0 border-0" style=" box-sizing: border-box;">
                             <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                <p class="card-text fs-5 px-2">
+                                <p class="card-text fontc  px-2">
                                     Chargrilled Burg
                                 </p>
-                                <div class="text-white bg-succes px-1 h-25 px-2"
-                                    style="background-color: rgb(52, 247, 52);height: 20%;">
+                                <div class="text-white bg-succes  padg" style="background-color: #79b530;height: 20%;">
                                     <p class="p-0 m-0"> $1,800.0</p>
-                                    <p class="p-0 m-0"> $2,000.0</p>
+                                    <p class="p-0 m-0 text-decoration-line-through"> $2,000.0</p>
                                 </div>
 
                             </div>
@@ -351,24 +323,24 @@
         </div>
         <!-- this is the two food deals -->
         <div class="container-fluid py-3 flex-column  p-md-3 flex-md-row d-flex justify-content-md-around">
-            <div class="position-relative ">
-                <img src="burger meal.jpg" class="rounded py-md-0 py-3 img-fluid" id="twofood1" alt="...">
+            <div class="position-relative overflow-hidden my-2">
+                <img src="burger meal.jpg" class="rounded  img-fluid" id="twofood1" alt="...">
                 <div class="position-absolute fs- " style=" top:6%; left:6%;">
                     <p class="badge text-white p-0 rounded-1" style="background-color: rgb(197, 15, 54);">NEW</p>
                     <p class="text-white fs-md-5 fs-6 p-0 ">BURGER MEAL</p>
-                    <p class="text-white">FROM <i class="bi bi-currency-dollar"
-                            style="color: rgb(42, 235, 42);"></i><span style="color:rgb(42, 235, 42) ;">49.00</span></p>
-                    <p class="p-md-2 p-1 text-white" style="background-color: rgb(42, 235, 42);">ORDER Now</p>
+                    <p class="text-white">FROM <i class="bi bi-currency-dollar" style="color: #79b530;"></i><span
+                            style="color:#79b530 ;">49.00</span></p>
+                    <p class="p-md-2 p-1 text-white" style="background-color:#79b530;">ORDER Now</p>
                 </div>
             </div>
-            <div class="position-relative">
-                <img src="pizza meel.jpg" class="rounded img-fluid py-md-0 py-3" id="twofood2" alt="...">
+            <div class="position-relative overflow-hidden my-2">
+                <img src="pizza meel.jpg" class="rounded img-fluid " id="twofood2" alt="...">
                 <div class="position-absolute" style=" top:6%; left:6%;">
                     <p class="badge text-white p-0 rounded-1 " style="background-color: rgb(197, 15, 54);">NEW</p>
                     <p class="text-white fs-md-5 fs-6">PIZZA MEAL</p>
-                    <p class="text-white">FROM <i class="bi bi-currency-dollar"
-                            style="color: rgb(42, 235, 42);"></i><span style="color:rgb(42, 235, 42) ;">49.00</span></p>
-                    <p class="p-md-2 p-1 text-white" style="background-color: rgb(42, 235, 42);">ORDER Now</p>
+                    <p class="text-white">FROM <i class="bi bi-currency-dollar" style="color:#79b530;"></i><span
+                            style="color:#79b530;">49.00</span></p>
+                    <p class="p-md-2 p-1 text-white" style="background-color: #79b530;">ORDER Now</p>
                 </div>
             </div>
         </div>
@@ -381,49 +353,51 @@
                     <div class="row position-relative">
                         <h5 class="text-start ps-md-5"> DEAL OF THE DAY</h5>
                         <div class="col py-1 ps-md-5 col-12 col-md-12 position-relative">
-                            <div class="card  shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="card  mb-5 rounded-0 border-0 shadow-none"
+                                style="box-shadow: 3px 3px gainsboro;">
                                 <img src="big sandwich.jpg" class="card-img-top" alt="...">
-                                <div class="d-flex justify-content-center mb-">
+                                <div class="d-flex justify-content-center ">
                                     <img src="stars.png" class="w-50 stars" alt="">
                                 </div>
+                                <div class="d-flex text-white  adjustments ">
+                                    <div class="bg-danger  mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
+                                        style="padding: 8px 16px;">
+                                        <p class="m-0">991</p>
+                                        <p class="m-0">Days</p>
+                                    </div>
+                                    <div class="bg-danger   mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
+                                        style="padding: 9px 11px;">
+                                        <p class="m-0">19</p>
+                                        <p class="m-0">Hours</p>
+                                    </div>
+                                    <div class="bg-danger  mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
+                                        style="padding: 8px 15px;">
+                                        <p class="m-0">11</p>
+                                        <p class="m-0">Mins</p>
+                                    </div>
+                                    <div class="bg-danger  mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
+                                        style="padding: 8px 20px;">
+                                        <p class="m-0">9</p>
+                                        <p class="m-0">Sec</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card shadow mt-5 " style="box-shadow: 3px 3px gainsboro;">
-                                <div class="card-body p-0  shadow d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <p class="card-text fs-5 px-2 pt-2">
+                            <div class="card shadow mt-5 rounded-0 border-0 ">
+                                <div
+                                    class="card-body p-0 rounded-0 border-0  shadow d-flex justify-content-between align-items-center">
+                                    <div style="padding: .3rem;">
+                                        <p class="card-text fs-5 px-2  m-0">
                                             Roasted Garlic
                                         </p>
-                                        <img src="stars.png " class="img-fluid pb-2 px-2 " alt="">
+                                        <img src="stars.png " class="img-fluid  px-2 " alt="">
                                     </div>
-                                    <div class="text-white bg-succes p-3    "
-                                        style="background-color: rgb(52, 247, 52);">
+                                    <div class="text-white bg-succes "
+                                        style="background-color: #79b530;padding: .6rem;">
                                         <p class="p-0 m-0"> $1,800.0</p>
                                         <p class="p-0 m-0"> $2,000.0</p>
                                     </div>
 
                                 </div>
-                            </div>
-                        </div>
-                        <div class="d-flex text-white" style="position:absolute;bottom:24%;LEFT:25%">
-                            <div class="bg-danger  mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
-                                style="padding: 8px 16px;">
-                                <p class="m-0">991</p>
-                                <p class="m-0">Days</p>
-                            </div>
-                            <div class="bg-danger   mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
-                                style="padding: 9px 11px;">
-                                <p class="m-0">19</p>
-                                <p class="m-0">Hours</p>
-                            </div>
-                            <div class="bg-danger  mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
-                                style="padding: 8px 15px;">
-                                <p class="m-0">11</p>
-                                <p class="m-0">Mins</p>
-                            </div>
-                            <div class="bg-danger  mx-1 rounded-circle d-flex justify-content-center align-items-center flex-column"
-                                style="padding: 8px 20px;">
-                                <p class="m-0">9</p>
-                                <p class="m-0">Sec</p>
                             </div>
                         </div>
                     </div>
@@ -434,21 +408,21 @@
                     <div class="container-fluid">
                         <!-- this is the trail ? -->
                         <div class="row flex-wrap g-md-0 justify-content-around">
-                            <div class="col py-1 col-12 col-md-5">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col py-1 col-6 col-md-5 ">
+                                <div class="card position-relative  rounded-0 border-0">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                 </div>
-                                <div class="card shadow mt-2" style="box-shadow: 3px 3px gainsboro;">
+                                <div class="card shadow mt-2 rounded-0 border-0">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5 px-2">
+                                        <p class="card-text mb-0 fontc">
                                             Chargrilled Burg
                                         </p>
-                                        <div class="text-white bg-succes px-1  "
-                                            style="background-color: rgb(52, 247, 52);">
-                                            <p class="p-0 m-0"> $1,800.0</p>
+                                        <div class="text-white bg-succes padg px-3   "
+                                            style="background-color: #79b530;padding:12px 0px;">
+
                                             <p class="p-0 m-0"> $2,000.0</p>
                                         </div>
 
@@ -456,21 +430,21 @@
                                 </div>
                             </div>
                             <!-- ///// -->
-                            <div class="col py-1 col-12 col-md-5">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col py-1 col-6 col-md-5 ">
+                                <div class="card position-relative  rounded-0 border-0">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                 </div>
-                                <div class="card shadow mt-2" style="box-shadow: 3px 3px gainsboro;">
+                                <div class="card shadow mt-2 rounded-0 border-0">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5 px-2">
+                                        <p class="card-text mb-0 fontc">
                                             Chargrilled Burg
                                         </p>
-                                        <div class="text-white bg-succes px-1 h-25 "
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
-                                            <p class="p-0 m-0"> $1,800.0</p>
+                                        <div class="text-white bg-succes padg px-3   "
+                                            style="background-color: #79b530;padding:12px 0px;">
+
                                             <p class="p-0 m-0"> $2,000.0</p>
                                         </div>
 
@@ -478,21 +452,21 @@
                                 </div>
                             </div>
                             <!-- /// -->
-                            <div class="col py-1 col-12 col-md-5">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col py-1 col-6 col-md-5 ">
+                                <div class="card position-relative  rounded-0 border-0">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                 </div>
-                                <div class="card shadow mt-2" style="box-shadow: 3px 3px gainsboro;">
+                                <div class="card shadow mt-2 rounded-0 border-0">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5 px-2">
+                                        <p class="card-text mb-0 fontc">
                                             Chargrilled Burg
                                         </p>
-                                        <div class="text-white bg-succes px-1 h-25 "
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
-                                            <p class="p-0 m-0"> $1,800.0</p>
+                                        <div class="text-white bg-succes padg px-3   "
+                                            style="background-color: #79b530;padding:12px 0px;">
+
                                             <p class="p-0 m-0"> $2,000.0</p>
                                         </div>
 
@@ -500,21 +474,21 @@
                                 </div>
                             </div>
                             <!-- ////// -->
-                            <div class="col py-1 col-12 col-md-5">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col py-1 col-6 col-md-5 ">
+                                <div class="card position-relative  rounded-0 border-0">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                 </div>
-                                <div class="card shadow mt-2" style="box-shadow: 3px 3px gainsboro;">
+                                <div class="card shadow mt-2 rounded-0 border-0">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5 px-2">
+                                        <p class="card-text mb-0 fontc">
                                             Chargrilled Burg
                                         </p>
-                                        <div class="text-white bg-succes px-1 h-25 "
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
-                                            <p class="p-0 m-0"> $1,800.0</p>
+                                        <div class="text-white bg-succes padg px-3   "
+                                            style="background-color: #79b530;padding:12px 0px;">
+
                                             <p class="p-0 m-0"> $2,000.0</p>
                                         </div>
 
@@ -535,19 +509,19 @@
                 <p class="py-sm-0 mb-0 fonts fw-bold ">FRESH & HEALTHY</p>
                 <p class="py-sm-0 mb-0 fonts fw-bold  ">FOOD</p>
                 <p class="py-sm-0 mb-0 fonts">Breakfast Combo Offers</p>
-                <p> <span class="text-danger fonts py-sm-0 m-sm-0">$149.00</span><span
+                <p class="my-0 my-md-2"> <span class="text-danger fonts my-0  ">$149.00 </span><span
                         class="m-sm-0 fonts text-success py-sm-0">$199.00</span></p>
-                <p> <span class="text-white fs-6 p-2  " style="background-color: rgb(37, 226, 37);">
+                <p> <span class="text-white fontc p-md-2 py-1  " style="background-color:#79b530;">
                         ORDER NOW </span>
                 </p>
             </div>
         </div>
         <!-- this is the new section of toop products?? -->
         <div class="bg-light py-4 pb-5">
-            <div class="container">
-                <div class="d-flex justify-content-between flex-column flex-md-row ">
-                    <p class="fs-5 fw-bold">TOP PRODUCTS</p>
-                    <p> <span class="px-2"> LEATEST</span>
+            <div class="container ">
+                <div class="d-flex justify-content-between mb-md-5 flex-column flex-md-row ">
+                    <p class="fs-3 fw-semibold" style="letter-spacing: 1px;">TOP PRODUCTS</p>
+                    <p> <span class="px-2 text-success"> LEATEST</span>
                         <spanc class="px-2"> SPECIAL</span>
                             <span class="px-2"> BESTSELLER</span>
                     </p>
@@ -555,100 +529,100 @@
                 <div class="container-fluid bg-light justify-content-between">
                     <div class="row ">
                         <!-- card1 -->
-                        <div class="col py-1 col-md-3">
-                            <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                        <div class="col-6 py-1  col-md-3">
+                            <div class="card rounded-0 border-0 position-relative ">
                                 <img src="pizzi.jpg" class="card-img-top" alt="...">
                                 <div class="d-flex justify-content-center ">
                                     <img src="stars.png" class="w-50 stars" alt="">
                                 </div>
                                 <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                    style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                    style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                             </div>
-                            <div class="card shadow mt-2  "
-                                style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                            <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                 <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                    <p class="card-text fs-5  px-2">
+                                    <p class="card-text fontc px-2">
                                         Chargrilled Burg
                                     </p>
-                                    <div class=" bg-succes px-1 h-25 px-2"
-                                        style="background-color: rgb(52, 247, 52);height: 20%;">
+                                    <div class="text-white bg-succes padt  px-2"
+                                        style="background-color: #79b530;height: 19%;">
                                         <p class="p-0 m-0"> $1,800.0</p>
-                                        <p class="p-0 m-0"> $2,000.0</p>
+
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <!-- card2 -->
-                        <div class="col py-1 col-md-3">
-                            <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                        <div class="col-6 py-1  col-md-3">
+                            <div class="card rounded-0 border-0 position-relative ">
                                 <img src="pizzi.jpg" class="card-img-top" alt="...">
                                 <div class="d-flex justify-content-center ">
                                     <img src="stars.png" class="w-50 stars" alt="">
                                 </div>
                                 <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                    style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                    style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                             </div>
-                            <div class="card shadow mt-2  "
-                                style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                            <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                 <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                    <p class="card-text fs-5  px-2">
+                                    <p class="card-text fontc px-2">
                                         Chargrilled Burg
                                     </p>
-                                    <div class=" bg-succes px-1 h-25 px-2"
-                                        style="background-color: rgb(52, 247, 52);height: 20%;">
+                                    <div class="text-white bg-succes padt  px-2"
+                                        style="background-color: #79b530;height: 19%;">
                                         <p class="p-0 m-0"> $1,800.0</p>
-                                        <p class="p-0 m-0"> $2,000.0</p>
+
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <!-- card3 -->
-                        <div class="col py-1 col-md-3">
-                            <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                        <div class="col-6 py-1  col-md-3">
+                            <div class="card rounded-0 border-0 position-relative ">
                                 <img src="pizzi.jpg" class="card-img-top" alt="...">
                                 <div class="d-flex justify-content-center ">
                                     <img src="stars.png" class="w-50 stars" alt="">
                                 </div>
                                 <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                    style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                    style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                             </div>
-                            <div class="card shadow mt-2  "
-                                style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                            <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                 <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                    <p class="card-text fs-5  px-2">
+                                    <p class="card-text fontc px-2">
                                         Chargrilled Burg
                                     </p>
-                                    <div class=" bg-succes px-1 h-25 px-2"
-                                        style="background-color: rgb(52, 247, 52);height: 20%;">
+                                    <div class="text-white bg-succes padt  px-2"
+                                        style="background-color: #79b530;height: 19%;">
                                         <p class="p-0 m-0"> $1,800.0</p>
-                                        <p class="p-0 m-0"> $2,000.0</p>
+
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                         <!-- card4 -->
-                        <div class="col py-1 col-md-3">
-                            <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                        <div class="col-6 py-1  col-md-3">
+                            <div class="card rounded-0 border-0 position-relative ">
                                 <img src="pizzi.jpg" class="card-img-top" alt="...">
                                 <div class="d-flex justify-content-center ">
                                     <img src="stars.png" class="w-50 stars" alt="">
                                 </div>
                                 <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                    style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                    style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                             </div>
-                            <div class="card shadow mt-2  "
-                                style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                            <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                 <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                    <p class="card-text fs-5  px-2">
+                                    <p class="card-text fontc px-2">
                                         Chargrilled Burg
                                     </p>
-                                    <div class=" bg-succes px-1 h-25 px-2"
-                                        style="background-color: rgb(52, 247, 52);height: 20%;">
+                                    <div class="text-white bg-succes padt  px-2"
+                                        style="background-color: #79b530;height: 19%;">
                                         <p class="p-0 m-0"> $1,800.0</p>
-                                        <p class="p-0 m-0"> $2,000.0</p>
+
                                     </div>
 
                                 </div>
@@ -659,23 +633,25 @@
             </div>
         </div>
         <!-- our blogs page  -->
-        <div>
+        <div class="my-5">
             <div class="container">
+                <h3 class="fw-semibold" style="letter-spacing: 1px;">OUR BLOG</h3>
                 <div class="card-group" style="box-sizing: border-box;">
-                    <div class="card px-3 border-0 shadow" style="box-sizing: border-box;">
+                    <div class="card  mx-2 shadow" style="box-sizing: border-box;">
                         <img src="blog1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <i class="bi bi-chat-dots me-3 fw-light"
                                 style="font-family: Arial, Helvetica, sans-serif;">2 Comment</i>
                             <h5 class="card-title">Consectetur adipiscing</h5>
-                            <p class="card-text">A type specimen book. It has survived not only five centuries, but also
+                            <p class="card-text ">A type specimen book. It has survived not only five
+                                centuries, but also
                                 the leap into electronic typesetting, remaining essentially.</p>
                             <p class="card-text d-flex justify-content-between"> <small
                                     class="text-white bg-black badge p-3">Read More</small><small
                                     class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
-                    <div class="card px-3 border-0 shadow" style="box-sizing: border-box;">
+                    <div class="card mx-2  shadow" style="box-sizing: border-box;">
                         <img src="blog1.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
@@ -689,7 +665,7 @@
                                     class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
-                    <div class="card px-3 border-0 shadow" style="box-sizing: border-box;">
+                    <div class="card  mx-2 shadow" style="box-sizing: border-box;">
                         <img src="blog1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <i class="bi bi-chat-dots me-3 fw-light"
@@ -708,45 +684,50 @@
         </div>
         <!-- this is the develery boi page  -->
         <div class="bg-light">
-            <div class="container py-md-5">
-                <div class="row">
+            <div class="container-fluid py-md-5" style="background-color: #f5f5f5;">
+                <div class="row " style="background-color: #f5f5f5;">
                     <!-- this is the delvery boi pic  -->
-                    <div class="col col-12 col-md-3">
-                        <img src="delivry-boy-.jpg" class="img-fluid" alt="">
+                    <div class="col col-12 col-md-2 me-md-5" style="box-sizing: border-box; background-color: #f5f5f5;">
+                        <img src="delivry-boy-.jpg" class="pich" alt="">
                     </div>
-                    <!-- this is the jogn section part  -->
-                    <div class="col col-12 col-md-3">
-                        <p class="fs-5 fw-bold">TESTAMONIAL</p>
-                        <div>
-                            <img src="msg.png" class="img-fluid" alt="">
+                    <!-- this is the john section part  -->
+                    <div class="col col-12 col-md-4">
+                        <p class="fs-4 ps-3 mb-2" style="font-weight: 400;letter-spacing: 1px;">TESTIMONIALS</p>
+                        <div class="mb-3">
+                            <img src="msg.png" class=" ps-1 " style="height: 150%;width: 100%;" alt="">
                         </div>
-                        <div>
+                        <div class="ps-3">
                             <img src="boy.jpg" class="img-fluid rounded-circle float-start me-2" alt="">
                             <div class="pt-4">
-                                <p>JHON DOVE</p>
+                                <p class="m-1">JHON DOVE</p>
                                 <P>CUSTOMER</P>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 position-relative ">
+                    <div class="col col-12 col-md-5 position-relative ">
                         <img src="vegis.jpg" class="img-fluid" alt="">
-                        <div class="container-fluid bg-white d-flex w-auto pt-3 pb-5 position-absolute flex-sm-wrap  top-sm-0 end-sm-0 flex-column  justify-content-end align-items-center "
-                            style="position:absolute;top:0%;left: 27%; ">
-                            <p class="p-1 mb-0 fs-5  bg-danger text-white badge">NEW</p>
-                            <p class="py-sm-0   fw-boler text-black fs-3">FOOD & DRINKS</p>
-                            <p class="py-sm-0 fs-5 fw-light text-danger">BURGERS + SOUPS + SALADS</p>
-                            <p> <span class=" py-sm-0 m-sm-0 fw-bolder" style="color: rgb(39, 224, 39);">$149.00</span>
-                            </p>
-                            <p class=""> <span class="text-white fs-5 p-2" style="background-color: rgb(37, 226, 37);">
-                                    ORDER NOW </span>
-                            </p>
+                        <div class="container-fluid bg-white d-flex w-auto pt-3 pb-md-5 pb-0 position-absolute flex-sm-wrap  top-sm-0 end-sm-0 flex-column  justify-content-end align-items-center "
+                            style="position:absolute;top:0%;left: 23%; ">
+                            <div class="d-flex flex-column justify-content-center align-items-center widthc">
+                                <p class="p-1 my-0 my-md-2 fontc  bg-danger text-white badge">NEW</p>
+                                <p class="py-sm-0 my-0 my-md-1 fontc fw-bolder text-black spacing">FOOD<span
+                                        class="mx-1">&</span>DRINKS</p>
+                                <p class="py-sm-0 my-0 my-md-1 fontc fw-light text-danger spacing"
+                                    style="letter-spacing: 1px;">BURGERS+SOUPS+SALADS</p>
+                                <p> <span class=" p-sm-0 m-sm-0 fw-bolder" style="color: #79b530;">$149.00</span>
+                                </p>
+                                <p class=""> <span class="text-white fontc p-md-2 p-0 m-0 "
+                                        style="background-color: #79b530;">
+                                        ORDER NOW </span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- this is the poster section  -->
-        <div class="container py-md-5">
+        <div class="container my-4 py-md-5">
             <div class="row">
                 <div class="col-6 col-md-2">
                     <img src="poster-1.jpg" alt="">
@@ -771,31 +752,31 @@
         <!-- this is the last section before footer  -->
         <div class="container-fluid pt-md-4" style="background-color: rgb(219, 213, 213);">
             <div class="row">
-                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-6 col-md-3  d-flex flex-column justify-content-center align-items-center">
                     <img src="delievry van.png" class="img-fluid w-25" alt="">
                     <p class="fw-bold">Free Delivery</p>
-                    <p>
+                    <p class="text-center">
                         Shop For all order over $50
                     </p>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
                     <img src="wallet.png" class="img-fluid w-25" alt="">
                     <p class="fw-bold"> Cash On Delivery</p>
-                    <p>
+                    <p class="text-center">
                         100% Money Back guarantee
                     </p>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
                     <img src="giftcard.png" class="img-fluid w-25" alt="">
                     <p class="fw-bold">Special Gift Card</p>
-                    <p>
+                    <p class="text-center">
                         Offer special bonuses with gift
                     </p>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center">
                     <img src="support.png" class="img-fluid w-25" alt="">
                     <p class="fw-bold"> 24/7 Support</p>
-                    <p>
+                    <p class="text-center">
                         Answer for question all time
                     </p>
                 </div>
@@ -810,7 +791,7 @@
                     <div class="card-group py-5 border-0 ">
                         <div class="card border-0 mx-1">
                             <div class="card-body text-white " style="background-color: #333333">
-                                <h5 class="card-title fs-3 pb-4" style="color: green;">contact</h5>
+                                <h5 class="card-title fs-3 pb-4" style="color: #79b530;">Contact</h5>
                                 <p class="card-text d-flex flex-column">
                                     <i class="bi bi-send mx-1 ">
                                         71 Pennington Lane Vernon
@@ -827,13 +808,13 @@
                                     </i>
                                 </p>
                                 <div class="icons fs-5">
-                                    <i class="bi bg-black rounded-circle  bi-facebook mx-1"
+                                    <i class="bi bg-black rounded-circle  bi-facebook me-1"
                                         style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-instagram mx-1"
+                                    <i class="bi bg-black rounded-circle bi-instagram me1"
                                         style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-twitter mx-1" style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-youtube mx-1" style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-google mx-1" style="padding: 3px 7px;"></i>
+                                    <i class="bi bg-black rounded-circle bi-twitter me-1" style="padding: 3px 7px;"></i>
+                                    <i class="bi bg-black rounded-circle bi-youtube me-1" style="padding: 3px 7px;"></i>
+                                    <i class="bi bg-black rounded-circle bi-google me-1" style="padding: 3px 7px;"></i>
                                 </div>
 
                             </div>
@@ -842,7 +823,7 @@
                             <div class="card-body d-flex text-white justify-content-around "
                                 style="background-color: #333333">
                                 <div>
-                                    <h5 class="card-title fs-3  pb-4" style="color: green;">Information</h5>
+                                    <h5 class="card-title fs-3  pb-4" style="color:#79b530;">Information</h5>
                                     <p class="card-text d-flex flex-column">
                                         <span>
                                             About Us
@@ -865,7 +846,7 @@
                                 </div>
                                 <div>
 
-                                    <h5 class="card-title fs-3 pb-4 " style="color: green;">Services</h5>
+                                    <h5 class="card-title fs-3 pb-4 " style="color: #79b530;">Services</h5>
                                     <p class="card-text d-flex flex-column">
                                         <span>
                                             About Us
@@ -894,7 +875,7 @@
                             <div class="card-body d-flex text-white  justify-content-around p-3 "
                                 style="background-color: #333333">
                                 <div>
-                                    <h5 class="card-title fs-3 pb-4 " style="color: green;">NEWSLETTER SIGNUP</h5>
+                                    <h5 class="card-title fs-3 pb-4 " style="color:#79b530;">NEWSLETTER SIGNUP</h5>
                                     <p class="card-text">
                                         Get e-mail updates about our latest
                                         shop and special offers.
@@ -906,7 +887,7 @@
                                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp">
                                                 <i class="bi bi-send text-black rounded position-absolute top-0  fs-4"
-                                                    style="position: absolute; right: 20px ;background-color: rgb(62, 194, 62);"></i>
+                                                    style="position: absolute; right: 20px ;background-color: #79b530;"></i>
                                             </div>
 
                                             <div id="emailHelp" class="form-text" style="color: gray;">We'll never share
@@ -917,7 +898,7 @@
                                         </div>
                                     </form>
                                     <div>
-                                        <h6 class="card-title fs-5 pb-4 " style="color: green;">Payment</h6>
+                                        <h6 class="card-title fs-5 pb-4 " style="color:#79b530;">Payment</h6>
                                         <img src="payment.png" alt="">
                                     </div>
                                 </div>
@@ -928,12 +909,12 @@
 
             </div>
         </div>
-        <div class="lowerfooter flex-column flex-md-row bg-black d-flex justify-content-between align-items-center">
+        <div class="lowerfooter flex-column flex-md-row bg-black d-flex justify-content-around align-items-center">
             <div class="ps-md-1">
                 <img class="" src="food-logo.png" alt="">
             </div>
             <div>
-                <div class="d-flex flex-column justify-content-end justify-content-md-between text-light fs-2">
+                <div class="d-flex flex-column justify-content-end justify-content-md-between text-light fs-3">
                     <span class="ps-5 ps-md-0">
                         Powered By
                     </span>

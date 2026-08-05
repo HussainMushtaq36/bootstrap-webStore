@@ -9,64 +9,205 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .stars {
-            opacity: 0;
-            transition: opacity 0.3s ease;
+     <style>
+        .fonts {
+            font-size: 34px;
+
         }
 
-        .stars:hover {
+        .stars {
+            position: absolute;
+
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.3s ease, transform .3s ease;
+            bottom: 3%;
+        }
+
+        .card:hover .stars {
             opacity: 1;
+            transform: translateX(0);
+        }
+
+
+
+        #twofood1,
+        #twofood2 {
+
+            transition: transform 300ms ease-in-out
+        }
+
+        #twofood1:hover,
+        #twofood2:hover {
+            transform: scale(1.05)
+        }
+
+        .grow {
+
+            transition: transform 0.3s ease-in-out
+        }
+
+        .grow:hover {
+            transform: scale(1.05)
+        }
+
+        .adjustments {
+            position: absolute;
+            bottom: -6.5%;
+            left: 21%;
+        }
+
+        .vanish .padg {
+            padding-top: .0;
+            padding-bottom: .0;
+        }
+
+        .paddsl {
+            padding-left: 1.5rem;
+        }
+
+        .paddsr {
+            padding-right: 3rem;
+        }
+
+        .navl {
+            padding-left: 40px;
+        }
+
+        .fontc {
+            font-size: 1.25rem;
+        }
+
+        .pich {
+            height: 90%;
+            width: 125%;
+        }
+
+        .padt {
+            padding: .7rem .5rem;
+        }
+
+        .widthc {
+            width: auto;
+        }
+
+        .spacing {
+            word-spacing: 2px;
+        }
+
+        .overflowh {
+            overflow: hidden;
+        }
+        .navsearch{
+            position: absolute;
+            padding-right: 190px;padding-top:.7rem;padding-bottom:.7rem;top:-11%;left: -45%;
+        }
+        .searchicon{
+            position:absolute; top:10%;left:40%;
+        }
+
+        @media (max-width:450px) {
+            .searchicon{
+            position:absolute; top:-6%;left:85%;
+        }
+            .navsearch{
+                padding-right: 0px;padding-top:0;padding-bottom:0;top:0%;left:0%;
+            }
+            .fonts {
+                font-size: 10px;
+            }
+
+            .adjustments {
+
+                bottom: -4%;
+                left: 15%;
+            }
+
+            .paddsl {
+                padding-left: 0px;
+            }
+
+            .paddsr {
+                padding-right: 0px;
+            }
+
+            .padg {
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                padding: .5rem 0;
+            }
+
+            .fontc {
+                font-size: .9rem;
+            }
+
+            .pich {
+                height: 85%;
+                width: 95%;
+            }
+
+            .padt {
+                padding: 1.1rem .5rem;
+            }
+
+            .widthc {
+                width: 60%;
+            }
+
+            .spacing {
+                word-spacing: 0px;
+            }
+
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
-            <div class="firsttopbar py-1 px-2 bg-light ">
+        <div class="container-fluid " style="padding-left: 0px;padding-right: 0px;">
+            <div class="firsttopbar py-1 px-2  " style="background-color: #eeeeee;">
                 <div class="container py-2 d-flex flex-column flex-md-row justify-content-around align-items-center ">
-                    <div class="d1">
-                        <i class="bi bi-telephone mx-2"></i>
+                    <div class="d1 " style="color: #212529;font-weight: 500; font-size: 15px;">
+                        <i class="bi bi-clock " style="color: #212529;font-weight: 500;"></i>
                         <span>Opening Hours:8:00 AM - 8:00 PM</span>
                     </div>
                     <div class="d2">
-                        <i class="bi bi-person mx-2"></i>
-                        My Account <i class="bi bi-cash mx-2"></i>
-                        Currency <i class="fi fi-gb mx-2"></i>
-                        English
-
+                        <i class="bi bi-person "></i>
+                        My Account <i class="bi bi-chevron-down fw-bold" style="font-size: 10px;"></i><i
+                            class="bi bi-currency-dollar "></i>Currency <i class="bi bi-chevron-down fw-bold"
+                            style="font-size: 10px;"></i><span> <img src="en-flag.png" alt=""></span> English <i
+                            class="bi bi-chevron-down fw-bold" style="font-size: 10px;"></i>
                     </div>
                 </div>
             </div>
             <!--this is the 2nd topbar -->
-            <div style="min-height:100px;"
-                class="container px-3   d-flex flex-column flex-md-row  justify-content-around align-items-center">
-                <div class="2ndtopbar-start  text-start ">
+            <div style="min-height:80px; padding: 0px 30px;"
+                class="container px-md-5 px-2  d-flex flex-md-row  justify-content-md-around justify-content-between align-items-center">
+                <div class="2ndtopbar-start  text-start paddsl ">
                     <div class="topbar d-flex align-items-center">
-                        <i class="bi bi-telephone  me-3 text-white bg-danger rounded-circle fs-3 "
-                            style="padding: 6px 12px;"></i>
+                        <i class="bi bi-telephone  me-2 text-white bg-danger rounded-circle fs-3 "
+                            style="padding: 6px 13px;"></i>
                         <div class="">
                             <h6>Contact us:</h6><span>03220583238</span>
                         </div>
                     </div>
                 </div>
                 <div class="2ndtobbar-mid">
-                    <img src="food-logo.png" class="img-fluid" style="width:100%;">
+                    <img src="food-logo.png" class="img-fluid d-none d-md-block" style="width:100%;">
                 </div>
-                <div class="2ndtopbar-end  text-start ">
+                <div class="2ndtopbar-end  text-start paddsr ">
                     <div class="topbar d-flex align-items-center">
-                        <i class="bi bi-bucket me-3 text-white bg-danger rounded-circle fs-3 "
+                        <i class="bi bi-bucket me-1 text-white bg-danger rounded-circle fs-3 "
                             style="padding: 6px 12px;"></i>
                         <div class="">
-                            <h6>My Cart:</h6><span>03220583238</span>
+                            <h6>My Cart</h6><span>0item-$0.00</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- time for the navbar -->
-            <div class="nav " style="background-color: rgb(46, 250, 46);">
-                <div class="container fs-5  ">
+            <div class="nav " style="background-color:#79b530;">
+                <div class="container fs-5 fw-semibold ">
                     <nav class="navbar navbar-expand-lg ">
                         <div class="container-fluid px-3 py-2">
                             <a class="navbar-brand text-white" href="index.html">Home</a>
@@ -79,8 +220,8 @@
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
+                                            data-bs-toggle="dropdown" aria-expanded="false vanish">
+                                            MENU
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="medicine.html">Medicine</a></li>
@@ -108,12 +249,12 @@
 
                                 </ul>
                                 <form class="d-flex position-relative" role="search">
-                                    <input class="form-control   " type="search" placeholder="Search"
-                                        aria-label="Search"
-                                        style="padding-right: 190px;padding-top:.7rem;padding-bottom:.7rem;">
-                                    <button class="btn  text-white " style="position:absolute; top:10%;left:85%;"
+                                    <input class="form-control navsearch  position-relative " type="search" placeholder="Search"
+                                        aria-label="Search">
+                                        
+                                    <button class="btn  text-white searchicon " 
                                         type="submit ">
-                                        <i class="bi bi-search text-white p-2 bg-danger rounded-1">
+                                        <i class="bi bi-search text-white p-md-2 p-1 bg-danger rounded-1">
                                         </i>
                                     </button>
                                 </form>
@@ -131,14 +272,14 @@
             <p class="fs-5 mb-0">Medicine</p>
             <P class="fs-5 mb-0">Home>>MENU>>MEDICINE</P>
         </div>
-         <div class="container  " style="box-sizing: border-box;">
+        <div class="container  " style="box-sizing: border-box;">
             <div class="row">
                 <!-- this is the left side colum of the salad page  -->
                 <div class="col-12 pt-3 col-md-3">
                     <!-- first one  -->
                     <ul class="list-group list-group-flush py-2 pt-1   shadow">
-                        <li class="list-group-item rounded " style="background-color: rgb(74, 240, 74);">
-                            <h4>CATAGORIES</h4>
+                        <li class="list-group-item rounded " style="background-color: #79b530;">
+                            <h4 class="text-white">CATAGORIES</h4>
                         </li>
                         <li class="list-group-item py-3 d-flex justify-content-between"><span>A first item</span> <span
                                 class="fw-bold">+</span></li>
@@ -162,8 +303,8 @@
 
                     <!-- third one  -->
                     <ul class="list-group list-group-flush py-2 shadow">
-                        <li class="list-group-item rounded " style="background-color: rgb(74, 240, 74);">
-                            <h4>SPECIALS</h4>
+                        <li class="list-group-item rounded " style="background-color: #79b530;">
+                            <h4 class="text-white">SPECIALS</h4>
                         </li>
                         <li class="list-group-item py-3 border-0">
                             <img src="littel-1.jpg"
@@ -249,150 +390,225 @@
                     <div>
                         <div class="row">
                             <!-- card1 -->
-                            <div class="col py-1 my-4 col-md-4">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center ">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                     <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                        style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
-                                </div>
-                                <div class="card shadow mt-2  "
-                                    style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
-                                    <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5  px-2">
-                                            Chargrilled Burg
-                                        </p>
-                                        <div class=" bg-succes px-1 h-25 px-2"
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
-                                            <p class="p-0 m-0"> $1,800.0</p>
-                                            <p class="p-0 m-0"> $2,000.0</p>
-                                        </div>
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
 
-                                    </div>
                                 </div>
-                            </div>
-                            <!-- card1 -->
-                            <div class="col py-1 my-4 col-md-4">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
-                                    <img src="pizzi.jpg" class="card-img-top" alt="...">
-                                    <div class="d-flex justify-content-center ">
-                                        <img src="stars.png" class="w-50 stars" alt="">
-                                    </div>
-                                    <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                        style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
-                                </div>
-                                <div class="card shadow mt-2  "
-                                    style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5  px-2">
+                                        <p class="card-text fontc px-2">
                                             Chargrilled Burg
                                         </p>
-                                        <div class=" bg-succes px-1 h-25 px-2"
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
                                             <p class="p-0 m-0"> $1,800.0</p>
-                                            <p class="p-0 m-0"> $2,000.0</p>
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             <!-- card2 -->
-                            <div class="col py-1 my-4 col-md-4">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center ">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                     <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                        style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                                 </div>
-                                <div class="card shadow mt-2  "
-                                    style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5  px-2">
+                                        <p class="card-text fontc px-2">
                                             Chargrilled Burg
                                         </p>
-                                        <div class=" bg-succes px-1 h-25 px-2"
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
                                             <p class="p-0 m-0"> $1,800.0</p>
-                                            <p class="p-0 m-0"> $2,000.0</p>
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                             <!-- card3 -->
-                            <div class="col py-1 my-4 col-md-4">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center ">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                     <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                        style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                                 </div>
-                                <div class="card shadow mt-2  "
-                                    style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5  px-2">
+                                        <p class="card-text fontc px-2">
                                             Chargrilled Burg
                                         </p>
-                                        <div class=" bg-succes px-1 h-25 px-2"
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
                                             <p class="p-0 m-0"> $1,800.0</p>
-                                            <p class="p-0 m-0"> $2,000.0</p>
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-                            <!-- card2 -->
-                            <div class="col py-1 my-4 col-md-4">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <!-- card 4 -->
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center ">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                     <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                        style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                                 </div>
-                                <div class="card shadow mt-2  "
-                                    style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5  px-2">
+                                        <p class="card-text fontc px-2">
                                             Chargrilled Burg
                                         </p>
-                                        <div class=" bg-succes px-1 h-25 px-2"
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
                                             <p class="p-0 m-0"> $1,800.0</p>
-                                            <p class="p-0 m-0"> $2,000.0</p>
+
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-                            <!-- card3 -->
-                            <div class="col py-1 my-4 col-md-4">
-                                <div class="card position-relative shadow" style="box-shadow: 3px 3px gainsboro;">
+                            <!-- card5 -->
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
                                     <img src="pizzi.jpg" class="card-img-top" alt="...">
                                     <div class="d-flex justify-content-center ">
                                         <img src="stars.png" class="w-50 stars" alt="">
                                     </div>
                                     <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
-                                        style="background-color: rgb(52, 247, 52);top:4%;right:8% ;padding: 5px 8.4px;"></i>
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
                                 </div>
-                                <div class="card shadow mt-2  "
-                                    style="box-shadow: 3px 3px gainsboro; box-sizing: border-box;">
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
                                     <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
-                                        <p class="card-text fs-5  px-2">
+                                        <p class="card-text fontc px-2">
                                             Chargrilled Burg
                                         </p>
-                                        <div class=" bg-succes px-1 h-25 px-2"
-                                            style="background-color: rgb(52, 247, 52);height: 20%;">
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
                                             <p class="p-0 m-0"> $1,800.0</p>
-                                            <p class="p-0 m-0"> $2,000.0</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card6 -->
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
+                                    <img src="pizzi.jpg" class="card-img-top" alt="...">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="stars.png" class="w-50 stars" alt="">
+                                    </div>
+                                    <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
+                                </div>
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
+                                    <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
+                                        <p class="card-text fontc px-2">
+                                            Chargrilled Burg
+                                        </p>
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
+                                            <p class="p-0 m-0"> $1,800.0</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 7 -->
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
+                                    <img src="pizzi.jpg" class="card-img-top" alt="...">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="stars.png" class="w-50 stars" alt="">
+                                    </div>
+                                    <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
+                                </div>
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
+                                    <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
+                                        <p class="card-text fontc px-2">
+                                            Chargrilled Burg
+                                        </p>
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
+                                            <p class="p-0 m-0"> $1,800.0</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card8 -->
+                           <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
+                                    <img src="pizzi.jpg" class="card-img-top" alt="...">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="stars.png" class="w-50 stars" alt="">
+                                    </div>
+                                    <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
+                                </div>
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
+                                    <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
+                                        <p class="card-text fontc px-2">
+                                            Chargrilled Burg
+                                        </p>
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
+                                            <p class="p-0 m-0"> $1,800.0</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card9-->
+                            <div class="col-6  py-1 my-4 col-md-4">
+                                <div class="card shadow rounded-0 border-0 position-relative ">
+                                    <img src="pizzi.jpg" class="card-img-top" alt="...">
+                                    <div class="d-flex justify-content-center ">
+                                        <img src="stars.png" class="w-50 stars" alt="">
+                                    </div>
+                                    <i class="bi bi-bucket  text-white  rounded-circle position-absolute "
+                                        style="background-color:#79b530;top:4%;right:8% ;padding: 5px 8.4px;"></i>
+
+                                </div>
+                                <div class="card  mt-2 rounded-0 border-0 " style=" box-sizing: border-box;">
+                                    <div class="card-body p-0 shadow d-flex justify-content-between align-items-center">
+                                        <p class="card-text fontc px-2">
+                                            Chargrilled Burg
+                                        </p>
+                                        <div class="text-white bg-succes padt  px-2"
+                                            style="background-color: #79b530;height: 19%;">
+                                            <p class="p-0 m-0"> $1,800.0</p>
+
                                         </div>
 
                                     </div>
@@ -403,11 +619,11 @@
                     <div class="d-flex p-3 shadow justify-content-between">
                         <p class="fw-bold">Showing 1 to 9 of 18 pages(2 pages)</p>
                         <p>
-                            <small class="border border-2 dotted-border rounded-circle p-2 text-white "
-                                style="background-color: rgb(58, 223, 58);">1</small>
-                            <small class="border border-2 dotted-border rounded-circle p-2  ">2</small>
-                            <small class="border border-2 dotted-border rounded-circle p-2  ">></small>
-                            <small class="border border-2 dotted-border rounded-circle p-2  ">></small>
+                            <small class="border border-2 dotted-border rounded-circle  py-1 p-md-2 text-white "
+                                style="background-color: #79b530;">1</small>
+                            <small class="border border-2 dotted-border rounded-circle  py-1 p-md-2 ">2</small>
+                            <small class="border border-2 dotted-border rounded-circle  py-1 p-md-2  ">></small>
+                            <small class="border border-2 dotted-border rounded-circle  py-1 p-md-2  ">></small>
 
                         </p>
                     </div>
@@ -423,7 +639,7 @@
                     <div class="card-group py-5 border-0 ">
                         <div class="card border-0 mx-1">
                             <div class="card-body text-white " style="background-color: #333333">
-                                <h5 class="card-title fs-3 pb-4" style="color: green;">contact</h5>
+                                <h5 class="card-title fs-3 pb-4" style="color: #79b530;">Contact</h5>
                                 <p class="card-text d-flex flex-column">
                                     <i class="bi bi-send mx-1 ">
                                         71 Pennington Lane Vernon
@@ -440,13 +656,13 @@
                                     </i>
                                 </p>
                                 <div class="icons fs-5">
-                                    <i class="bi bg-black rounded-circle  bi-facebook mx-1"
+                                    <i class="bi bg-black rounded-circle  bi-facebook me-1"
                                         style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-instagram mx-1"
+                                    <i class="bi bg-black rounded-circle bi-instagram me1"
                                         style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-twitter mx-1" style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-youtube mx-1" style="padding: 3px 7px;"></i>
-                                    <i class="bi bg-black rounded-circle bi-google mx-1" style="padding: 3px 7px;"></i>
+                                    <i class="bi bg-black rounded-circle bi-twitter me-1" style="padding: 3px 7px;"></i>
+                                    <i class="bi bg-black rounded-circle bi-youtube me-1" style="padding: 3px 7px;"></i>
+                                    <i class="bi bg-black rounded-circle bi-google me-1" style="padding: 3px 7px;"></i>
                                 </div>
 
                             </div>
@@ -455,7 +671,7 @@
                             <div class="card-body d-flex text-white justify-content-around "
                                 style="background-color: #333333">
                                 <div>
-                                    <h5 class="card-title fs-3  pb-4" style="color: green;">Information</h5>
+                                    <h5 class="card-title fs-3  pb-4" style="color:#79b530;">Information</h5>
                                     <p class="card-text d-flex flex-column">
                                         <span>
                                             About Us
@@ -478,7 +694,7 @@
                                 </div>
                                 <div>
 
-                                    <h5 class="card-title fs-3 pb-4 " style="color: green;">Services</h5>
+                                    <h5 class="card-title fs-3 pb-4 " style="color: #79b530;">Services</h5>
                                     <p class="card-text d-flex flex-column">
                                         <span>
                                             About Us
@@ -507,7 +723,7 @@
                             <div class="card-body d-flex text-white  justify-content-around p-3 "
                                 style="background-color: #333333">
                                 <div>
-                                    <h5 class="card-title fs-3 pb-4 " style="color: green;">NEWSLETTER SIGNUP</h5>
+                                    <h5 class="card-title fs-3 pb-4 " style="color:#79b530;">NEWSLETTER SIGNUP</h5>
                                     <p class="card-text">
                                         Get e-mail updates about our latest
                                         shop and special offers.
@@ -519,7 +735,7 @@
                                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp">
                                                 <i class="bi bi-send text-black rounded position-absolute top-0  fs-4"
-                                                    style="position: absolute; right: 20px ;background-color: rgb(62, 194, 62);"></i>
+                                                    style="position: absolute; right: 20px ;background-color: #79b530;"></i>
                                             </div>
 
                                             <div id="emailHelp" class="form-text" style="color: gray;">We'll never share
@@ -530,7 +746,7 @@
                                         </div>
                                     </form>
                                     <div>
-                                        <h6 class="card-title fs-5 pb-4 " style="color: green;">Payment</h6>
+                                        <h6 class="card-title fs-5 pb-4 " style="color:#79b530;">Payment</h6>
                                         <img src="payment.png" alt="">
                                     </div>
                                 </div>
@@ -541,12 +757,12 @@
 
             </div>
         </div>
-        <div class="lowerfooter flex-column flex-md-row bg-black d-flex justify-content-between align-items-center">
+        <div class="lowerfooter flex-column flex-md-row bg-black d-flex justify-content-around align-items-center">
             <div class="ps-md-1">
                 <img class="" src="food-logo.png" alt="">
             </div>
             <div>
-                <div class="d-flex flex-column justify-content-end justify-content-md-between text-light fs-2">
+                <div class="d-flex flex-column justify-content-end justify-content-md-between text-light fs-3">
                     <span class="ps-5 ps-md-0">
                         Powered By
                     </span>
