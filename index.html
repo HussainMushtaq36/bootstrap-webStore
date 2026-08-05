@@ -9,7 +9,157 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <style>
+        .fonts {
+            font-size: 34px;
+
+        }
+
+        .stars {
+            position: absolute;
+
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.3s ease, transform .3s ease;
+            bottom: 3%;
+        }
+
+        .card:hover .stars {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+
+
+        #twofood1,
+        #twofood2 {
+
+            transition: transform 300ms ease-in-out
+        }
+
+        #twofood1:hover,
+        #twofood2:hover {
+            transform: scale(1.05)
+        }
+
+        .grow {
+
+            transition: transform 0.3s ease-in-out
+        }
+
+        .grow:hover {
+            transform: scale(1.05)
+        }
+
+        .adjustments {
+            position: absolute;
+            bottom: -6.5%;
+            left: 21%;
+        }
+
+        .vanish .padg {
+            padding-top: .0;
+            padding-bottom: .0;
+        }
+
+        .paddsl {
+            padding-left: 1.5rem;
+        }
+
+        .paddsr {
+            padding-right: 3rem;
+        }
+
+        .navl {
+            padding-left: 40px;
+        }
+
+        .fontc {
+            font-size: 1.25rem;
+        }
+
+        .pich {
+            height: 90%;
+            width: 125%;
+        }
+
+        .padt {
+            padding: .7rem .5rem;
+        }
+
+        .widthc {
+            width: auto;
+        }
+
+        .spacing {
+            word-spacing: 2px;
+        }
+
+        .overflowh {
+            overflow: hidden;
+        }
+        .navsearch{
+            position: absolute;
+            padding-right: 190px;padding-top:.7rem;padding-bottom:.7rem;top:-11%;left: -45%;
+        }
+        .searchicon{
+            position:absolute; top:10%;left:40%;
+        }
+
+        @media (max-width:450px) {
+            .searchicon{
+            position:absolute; top:-6%;left:85%;
+        }
+            .navsearch{
+                padding-right: 0px;padding-top:0;padding-bottom:0;top:0%;left:0%;
+            }
+            .fonts {
+                font-size: 10px;
+            }
+
+            .adjustments {
+
+                bottom: -4%;
+                left: 15%;
+            }
+
+            .paddsl {
+                padding-left: 0px;
+            }
+
+            .paddsr {
+                padding-right: 0px;
+            }
+
+            .padg {
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                padding: .5rem 0;
+            }
+
+            .fontc {
+                font-size: .9rem;
+            }
+
+            .pich {
+                height: 85%;
+                width: 95%;
+            }
+
+            .padt {
+                padding: 1.1rem .5rem;
+            }
+
+            .widthc {
+                width: 60%;
+            }
+
+            .spacing {
+                word-spacing: 0px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
